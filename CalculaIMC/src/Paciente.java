@@ -1,10 +1,12 @@
 public class Paciente {
 	double altura;
 	double peso;
+	String nome
 	
-	public Paciente(double a, double p) {
+	public Paciente(double a, double p, String n) {
 		this.altura = a;
 		this.peso = p;
+		this.nome = n;
 	}
 	
 	public double calcularIMC() {
