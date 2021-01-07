@@ -1,20 +1,25 @@
 public class Paciente {
+	
+	// Atributos
 	double altura;
 	double peso;
-	String nome
+	String nome;
 	
+	// Construtor
 	public Paciente(double a, double p, String n) {
 		this.altura = a;
 		this.peso = p;
 		this.nome = n;
 	}
 	
-	public double calcularIMC() {
+	// Função para calcular e retornar o IMC
+	public double calcularIMC() { 
 		return this.peso / (this.altura * this.altura);
 	}
 	
+	// Função para retornar o diagnóstico do paciente.
 	public String diagnostico() {
-		if(this.calcularIMC() < 16)
+		if(this.calcularIMC() < 16) 
 			return "Baixo peso muito grave = IMC abaixo de 16 kg/m²";
 		else if(this.calcularIMC() < 17)
 			return "Baixo peso grave = IMC entre 16 e 16,99 kg/m²";
